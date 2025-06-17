@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<header></header>
+
+<body>
+    <main>
+        <!-- forms in html -->
+        <forms action="action.php">
+            <input type="text" placeholder="type something here">
+            <br>
+            <br>
+            <input type="username" placeholder="username">
+            <br>
+            <br>
+            <input type="password" placeholder="password">
+            <br>
+            <br>
+            <!-- if name same in radio then only one would select -->
+            <input type="radio" value="class 11" name="class">Class 11<br>
+            <input type="radio" value="calss 12" name="class">Class 12<br>
+        </forms>
+        <br>
+        <br>
+        <form action="action2.php">
+            <!-- with label we give id and can select option by clicking on value -->
+            <label for="101">
+                <input type="radio" value="class 11" name="class" id="101">Class 11
+            </label><br>
+            <label for="102">
+                <input type="radio" value="calss 12" name="class" id="102">Class 12
+            </label><br>
+        </form>
+        <br>
+        <!-- class is for group
+id is for only one -->
+        <form action="action.php">
+            <label for="math"><input type="checkbox" value="math" name="subject" id="1">MATH
+            </label><br>
+            <label for="2">
+                <input type="checkbox" value="physics" name="subject" id="2">PHYSICS
+            </label><br>
+
+            <label for="3">
+                <input type="checkbox" value="science" name="subject" id="3">SCIENCE
+            </label>
+            <br>
+            <br>
+            <!-- drop down -->
+            <select name="city" id="city">
+                <option value="lahore">LAHORE</option>
+                <option value="karachi">KARACHI</option>
+                <option value="islamabad">ISLAMABAD</option>
+                <option value="Nanakana sahib">NANKANA SAHIB</option>
+            </select><br>
+            <br>
+            <!-- textarea used for feedback -->
+            <textarea name="feedback" id="101" placeholder="Give here feedback" rows="2" cols="50"></textarea>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
